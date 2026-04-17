@@ -1,10 +1,17 @@
-# 🖥️ Explorer Guard — Employee Activity Monitoring System
+# Explorer Guard - Employee Activity Monitoring System
 
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"/>
   <img src="https://img.shields.io/badge/Language-Python%203.10+-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Status-Production%20Ready-28a745?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Status-Development-28a745?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MSS-Screen%20Capture-orange?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/PyWin32-Windows%20API-00A4EF?style=for-the-badge&logo=windows&logoColor=white"/>
+  <img src="https://img.shields.io/badge/NumPy-Scientific%20Computing-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
 </p>
 
 > **Sistem pemantauan aktivitas karyawan berbasis desktop** yang merekam layar secara otomatis saat File Explorer aktif dan mengambil snapshot webcam saat folder sensitif diakses.
