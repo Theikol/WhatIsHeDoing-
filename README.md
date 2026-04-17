@@ -1,4 +1,4 @@
-# 🖥️ ExplorerGuard — Employee Activity Monitoring System
+# 🖥️ Explorer Guard — Employee Activity Monitoring System
 
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"/>
@@ -11,7 +11,7 @@
 
 ---
 
-## 📋 Daftar Isi
+## Daftar Isi
 
 - [Latar Belakang](#-latar-belakang)
 - [Tujuan Sistem](#-tujuan-sistem)
@@ -28,17 +28,17 @@
 
 ---
 
-## 📌 Latar Belakang
+## Latar Belakang
 
-Di lingkungan kerja modern, akses terhadap data perusahaan yang bersifat rahasia dan sensitif merupakan risiko keamanan yang tidak dapat diabaikan. Kebocoran data internal, baik disengaja maupun tidak, dapat merugikan perusahaan secara material dan reputasional.
+Di lingkungan kerja atau corporation, akses terhadap data perusahaan yang bersifat rahasia dan sensitif merupakan risiko keamanan yang tidak dapat diabaikan dan sangatlah serius. Kebocoran data internal, baik disengaja maupun tidak, dapat merugikan perusahaan secara material dan reputasional.
 
-**ExplorerGuard** hadir sebagai solusi pengawasan internal berbasis desktop yang berjalan secara *background* di komputer karyawan, memantau aktivitas File Explorer secara pasif tanpa mengganggu produktivitas kerja.
+**Explorer Guard** ialah sofware yang hadir sebagai solusi pengawasan internal berbasis desktop yang berjalan secara *background* di komputer karyawan, memantau aktivitas File Explorer secara pasif tanpa mengganggu produktivitas kerja.
 
 Sistem ini dikembangkan sesuai prinsip-prinsip **Rekayasa Perangkat Lunak (RPL)** dengan pendekatan *modular*, *maintainable*, dan *scalable*.
 
 ---
 
-## 🎯 Tujuan Sistem
+## Tujuan Sistem
 
 | No | Tujuan |
 |----|--------|
@@ -50,35 +50,38 @@ Sistem ini dikembangkan sesuai prinsip-prinsip **Rekayasa Perangkat Lunak (RPL)*
 
 ---
 
-## ✨ Fitur Utama
+## Fitur Utama
 
-### 🎬 Screen Recording Otomatis
+### Screen Recording Otomatis
 - Rekaman layar dimulai secara otomatis ketika File Explorer dibuka
 - Rekaman berhenti dan disimpan otomatis ketika Explorer ditutup
 - Format video: AVI (XVID), 10 FPS
+- Backup video bukti yang  tersinkronisasi cloud atau server perusahaan (UPDATE LATER)
+- Membuat Startup Saat PC atau Komputer pertamakali diboot (UPDATE LATER)
+- Menyembunyikan task program (UPDATE LATER)  
 
-### 📷 Webcam Snapshot
+### Webcam Snapshot
 - Mengambil foto pengguna secara otomatis saat folder yang ditandai (*watched folder*) diakses
-- Cooldown 5 detik untuk mencegah duplikasi snapshot
+- Cooldown 5 detik (bisa di set custom) untuk mencegah duplikasi snapshot
 - Disimpan dalam format JPG dengan timestamp
 
-### 🔍 Folder Monitoring
+### Folder Monitoring
 - Memantau folder tertentu yang ditetapkan administrator
-- Deteksi real-time perpindahan direktori di File Explorer
+- Deteksi real time perpindahan direktori di File Explorer
 - Mendukung multiple watched folders
 
-### 🕵️ Stealth Mode
+### Stealth Mode
 - Berjalan tanpa jendela konsol yang terlihat
 - Tidak muncul sebagai proses mencurigakan di taskbar
 - Dapat dikonfigurasi sebagai startup otomatis via Task Scheduler
 
 ---
 
-## 🏗️ Arsitektur Sistem
+## Arsitektur Sistem
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                   ExplorerGuard Core                    │
+│                   Explorer Guard Core                    │
 │                                                         │
 │  ┌─────────────┐   ┌──────────────┐  ┌──────────────┐  │
 │  │  Explorer   │   │   Screen     │  │   Webcam     │  │
@@ -106,7 +109,7 @@ Sistem ini dikembangkan sesuai prinsip-prinsip **Rekayasa Perangkat Lunak (RPL)*
 
 ---
 
-## 🔄 Alur Kerja
+##  Alur Kerja
 
 ```
 START
@@ -145,7 +148,7 @@ Kembali ke loop monitoring
 
 ---
 
-## 💻 Kebutuhan Sistem
+## Kebutuhan Sistem
 
 ### Perangkat Keras
 | Komponen | Minimum | Rekomendasi |
@@ -154,7 +157,7 @@ Kembali ke loop monitoring
 | RAM | 4 GB | 8 GB |
 | Storage | 10 GB free | 50 GB free |
 | Webcam | Built-in / USB | HD 720p+ |
-| CPU | Intel Core i3 | Intel Core i5+ |
+| CPU | i5-4460, Ryzen 3 1200| i5-8400, Ryzen 5 2600|
 
 ### Perangkat Lunak
 | Komponen | Versi |
@@ -167,12 +170,12 @@ Kembali ke loop monitoring
 
 ---
 
-## 🚀 Instalasi
+## Instalasi
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/namaorganisasi/explorerguard.git
-cd explorerguard
+git clone https://github.com/Theikol/WhatIsHeDoing-.git
+cd WhatIsHeDoing-
 ```
 
 ### 2. Buat Virtual Environment
@@ -211,7 +214,7 @@ Task Scheduler → Create Task
 
 ---
 
-## ⚙️ Konfigurasi
+## Konfigurasi
 
 Edit bagian `CONFIG` di dalam `explorer_recorder.py`:
 
@@ -238,7 +241,7 @@ WATCHED_FOLDERS  = [
 
 ---
 
-## 📁 Struktur Direktori
+## Struktur Direktori
 
 ```
 explorerguard/
@@ -258,7 +261,7 @@ explorerguard/
 
 ---
 
-## 📖 Panduan Penggunaan
+##  Panduan Penggunaan
 
 ### Untuk Administrator IT
 
@@ -280,26 +283,26 @@ Setiap file dapat dikorelasikan berdasarkan timestamp untuk mengetahui:
 
 ---
 
-## 🔒 Kebijakan Privasi & Etika
+##  Kebijakan Privasi & Etika
 
-> ⚠️ **PENTING — Baca sebelum deployment**
+>  **PENTING — Baca sebelum deployment**
 
 Sistem ini **HANYA boleh** digunakan pada:
-- ✅ Komputer milik perusahaan
-- ✅ Karyawan yang telah menandatangani persetujuan pemantauan (*monitoring consent form*)
-- ✅ Sesuai dengan kebijakan IT dan HR perusahaan
-- ✅ Dalam koridor hukum ketenagakerjaan yang berlaku di yurisdiksi masing-masing
+-  Komputer milik perusahaan
+-  Karyawan yang telah menandatangani persetujuan pemantauan (*monitoring consent form*)
+-  Sesuai dengan kebijakan IT dan HR perusahaan
+-  Dalam koridor hukum ketenagakerjaan yang berlaku di yurisdiksi masing-masing
 
 Sistem ini **DILARANG** digunakan untuk:
-- ❌ Komputer pribadi tanpa izin pemilik
-- ❌ Pelanggaran privasi individu di luar konteks kerja
-- ❌ Tujuan di luar keamanan data perusahaan
-
+-  Komputer pribadi tanpa izin pemilik
+-  Pelanggaran privasi individu di luar konteks kerja
+-  Tujuan di luar keamanan data perusahaan
+-  Kostumiasi SpyWare
 **Penggunaan di luar ketentuan di atas adalah tanggung jawab penuh pengguna.**
 
 ---
 
-## 👥 Tim Pengembang
+##  Tim Pengembang
 
 | Nama | Role | Kontak |
 |---|---|---|
@@ -310,7 +313,7 @@ Sistem ini **DILARANG** digunakan untuk:
 
 ---
 
-## 📄 Lisensi
+## Lisensi
 
 Perangkat lunak ini bersifat **proprietary** dan hanya untuk penggunaan internal perusahaan. Dilarang mendistribusikan, memodifikasi, atau menggunakan di luar lingkungan yang diizinkan tanpa persetujuan tertulis.
 
